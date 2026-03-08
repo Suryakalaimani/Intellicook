@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "buildCommand": "cd backend && npm install",
+  "public": false,
+  "functions": {
+    "backend/index.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/$1"
+    }
+  ],
+  "env": {
+    "GEMINI_API_KEY": "@gemini_api_key",
+    "JWT_SECRET": "@jwt_secret",
+    "PORT": "3000"
+  }
+}
