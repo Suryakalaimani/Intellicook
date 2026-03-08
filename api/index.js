@@ -11,11 +11,24 @@ const app = require('../backend/index.js');
 // Ensure frontend static files are served with correct path resolution
 const frontendPath = path.join(__dirname, '../frontend');
 
-// Serve static files from frontend directory
+// Serve static files from frontend directory with proper caching headers
 app.use(express.static(frontendPath, {
   dotfiles: 'allow',
-  index: true
+  index: ['index.html'],
+  setHeaders: (res, pathStr) => {
+    // Cache static assets
+    if (pathStr.match(/\.(js|css|json|woff|woff2|ttf|eot|svg)$/)) {
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    } else {
+      res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+    }
+  }
 }));
+
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
 
 // SPA fallback route - serve index.html for all non-API routes
 app.get('*', (req, res, next) => {
@@ -26,13 +39,20 @@ app.get('*', (req, res, next) => {
   
   const indexPath = path.join(frontendPath, 'index.html');
   
-  // Check if file exists
+  // Check if file exists and serve it
   if (fs.existsSync(indexPath)) {
+    res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
     res.sendFile(indexPath);
   } else {
-    res.status(404).send('Frontend not found');
+    res.status(404).send('Frontend index.html not found');
   }
 });
 
-// Export the app for Vercel
+// Error handler
+app.use((err, req, res, next) => {
+  console.error('Error:', err);
+  res.status(500).json({ error: 'Internal server error' });
+});
+
+// Export the app for Vercel serverless function
 module.exports = app;

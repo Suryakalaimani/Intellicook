@@ -1,5 +1,14 @@
 {
   "version": 2,
-  "buildCommand": "npm install",
-  "installCommand": "npm install && cd backend && npm install"
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs24.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/index.js"
+    }
+  ]
 }
