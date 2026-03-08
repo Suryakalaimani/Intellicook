@@ -1,0 +1,84 @@
+{
+  "ingredients": {
+    "tomato": {
+      "caloriesPer100g": 18,
+      "vegetarian": true
+    },
+    "onion": {
+      "caloriesPer100g": 40,
+      "vegetarian": true
+    },
+    "garlic": {
+      "caloriesPer100g": 149,
+      "vegetarian": true
+    },
+    "ginger": {
+      "caloriesPer100g": 80,
+      "vegetarian": true
+    },
+    "chicken": {
+      "caloriesPer100g": 165,
+      "vegetarian": false
+    },
+    "paneer": {
+      "caloriesPer100g": 321,
+      "vegetarian": true
+    },
+    "lentils": {
+      "caloriesPer100g": 116,
+      "vegetarian": true
+    },
+    "rice": {
+      "caloriesPer100g": 130,
+      "vegetarian": true
+    },
+    "wheat": {
+      "caloriesPer100g": 364,
+      "vegetarian": true
+    },
+    "oil": {
+      "caloriesPer100g": 884,
+      "vegetarian": true
+    },
+    "butter": {
+      "caloriesPer100g": 717,
+      "vegetarian": true
+    },
+    "cream": {
+      "caloriesPer100g": 340,
+      "vegetarian": true
+    },
+    "milk": {
+      "caloriesPer100g": 61,
+      "vegetarian": true
+    },
+    "yogurt": {
+      "caloriesPer100g": 59,
+      "vegetarian": true
+    },
+    "potato": {
+      "caloriesPer100g": 77,
+      "vegetarian": true
+    },
+    "carrot": {
+      "caloriesPer100g": 41,
+      "vegetarian": true
+    },
+    "spinach": {
+      "caloriesPer100g": 23,
+      "vegetarian": true
+    },
+    "broccoli": {
+      "caloriesPer100g": 34,
+      "vegetarian": true
+    },
+    "cauliflower": {
+      "caloriesPer100g": 25,
+      "vegetarian": true
+    },
+    "peas": {
+      "caloriesPer100g": 81,
+      "vegetarian": true
+    }
+  }
+}

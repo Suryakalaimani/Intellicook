@@ -1,0 +1,8 @@
+creating .gitignore file
+node_modules/
+*.sqlite
+*.db
+.env
+.DS_Store
+.vscode/
+*.log

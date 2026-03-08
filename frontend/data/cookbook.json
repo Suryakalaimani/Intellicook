@@ -1,0 +1,1198 @@
+[
+  {
+    "id": 1,
+    "title": "Butter Chicken",
+    "cuisine": "North Indian",
+    "description": "Creamy tomato-based chicken curry",
+    "isVegetarian": false,
+    "approxCalories": 350,
+    "protein": 28,
+    "cookTime": 30,
+    "ingredients": [
+      { "name": "Chicken breast", "quantity": "500g" },
+      { "name": "Tomato puree", "quantity": "1 cup" },
+      { "name": "Cream", "quantity": "0.5 cup" },
+      { "name": "Butter", "quantity": "3 tbsp" },
+      { "name": "Ginger-garlic paste", "quantity": "2 tbsp" },
+      { "name": "Onion", "quantity": "1 large" },
+      { "name": "Spices", "quantity": "as needed" }
+    ],
+    "steps": [
+      "Marinate chicken in yogurt and spices for 30 minutes",
+      "Cook chicken in a skillet until golden",
+      "Sauté onions and ginger-garlic paste",
+      "Add tomato puree and cook for 10 minutes",
+      "Add cream and cooked chicken",
+      "Simmer for 15 minutes",
+      "Garnish with cream and cilantro"
+
+
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Chole Bhature",
+    "cuisine": "North Indian",
+    "description": "Deep-fried bread with chickpea curry",
+    "isVegetarian": true,
+    "approxCalories": 420,
+    "protein": 12,
+    "cookTime": 45,
+    "ingredients": [
+      { "name": "Chickpeas", "quantity": "2 cups" },
+      { "name": "Flour", "quantity": "2 cups" },
+      { "name": "Yogurt", "quantity": "0.5 cup" },
+      { "name": "Onion", "quantity": "2 medium" },
+      { "name": "Tomato", "quantity": "2 medium" },
+      { "name": "Ginger-garlic paste", "quantity": "1 tbsp" },
+      { "name": "Spices", "quantity": "as needed" }
+    ],
+    "steps": [
+      "Prepare bhature dough with flour and yogurt",
+      "Let dough rise for 2 hours",
+      "Cook chickpeas with onions and tomatoes",
+      "Season with spices",
+      "Roll and deep fry bhature until golden",
+      "Serve hot with chole"
+
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Dosa with Sambar",
+    "cuisine": "South Indian",
+    "description": "Crispy rice and lentil crepe",
+    "isVegetarian": true,
+    "approxCalories": 280,
+    "protein": 6,
+    "cookTime": 20,
+    "ingredients": [
+      { "name": "Rice", "quantity": "1 cup" },
+      { "name": "Urad dal", "quantity": "0.5 cup" },
+      { "name": "Fenugreek seeds", "quantity": "0.5 tsp" },
+      { "name": "Vegetables", "quantity": "1 cup" },
+      { "name": "Tamarind", "quantity": "1 tbsp" },
+      { "name": "Lentils", "quantity": "0.5 cup" },
+      { "name": "Salt and spices", "quantity": "as needed" }
+    ],
+    "steps": [
+      "Soak rice and urad dal separately",
+      "Grind into smooth paste",
+      "Let batter ferment overnight",
+      "Prepare sambar with vegetables and lentils",
+      "Pour batter on hot griddle and spread thin",
+      "Cook until golden and crispy",
+      "Serve with sambar and chutney"
+
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Rasam",
+    "cuisine": "South Indian",
+    "description": "Spicy tamarind soup",
+    "isVegetarian": true,
+    "approxCalories": 85,
+    "protein": 1,
+    "cookTime": 15,
+    "ingredients": [
+      { "name": "Tamarind", "quantity": "2 tbsp" },
+      { "name": "Tomatoes", "quantity": "2 medium" },
+      { "name": "Cumin seeds", "quantity": "1 tsp" },
+      { "name": "Black pepper", "quantity": "1 tsp" },
+      { "name": "Fenugreek seeds", "quantity": "0.5 tsp" },
+      { "name": "Garlic", "quantity": "3 cloves" },
+      { "name": "Water", "quantity": "4 cups" }
+    ],
+    "steps": [
+      "Soak tamarind and extract juice",
+      "Boil water with tomatoes",
+      "Add tamarind juice and spices",
+      "Simmer for 10 minutes",
+      "Add garlic and black pepper",
+      "Simmer for 2 more minutes",
+      "Serve hot as a soup"
+
+
+
+
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Tandoori Chicken",
+    "cuisine": "North Indian",
+    "description": "Marinated and grilled chicken",
+    "isVegetarian": false,
+    "approxCalories": 250,
+    "protein": 30,
+    "cookTime": 35,
+    "ingredients": [
+      { "name": "Chicken pieces", "quantity": "1 kg" },
+      { "name": "Yogurt", "quantity": "1 cup" },
+      { "name": "Ginger-garlic paste", "quantity": "3 tbsp" },
+      { "name": "Red chili powder", "quantity": "2 tbsp" },
+      { "name": "Lemon juice", "quantity": "3 tbsp" },
+      { "name": "Turmeric", "quantity": "1 tsp" },
+      { "name": "Oil", "quantity": "2 tbsp" }
+    ],
+    "steps": [
+      "Mix yogurt, spices, and lemon juice",
+      "Marinate chicken for at least 2 hours",
+      "Skewer the chicken pieces",
+      "Cook in tandoor or oven at 200°C for 25-30 minutes",
+      "Baste with oil during cooking",
+      "Serve hot with lemon and onion"
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Palak Paneer",
+    "cuisine": "North Indian",
+    "description": "Spinach and cheese curry",
+    "isVegetarian": true,
+    "approxCalories": 320,
+    "protein": 18,
+    "cookTime": 25,
+    "ingredients": [
+      { "name": "Spinach", "quantity": "500g" },
+      { "name": "Paneer", "quantity": "250g" },
+      { "name": "Onion", "quantity": "1 medium" },
+      { "name": "Garlic", "quantity": "4 cloves" },
+      { "name": "Ginger", "quantity": "1 tbsp" },
+      { "name": "Cream", "quantity": "0.5 cup" },
+      { "name": "Butter", "quantity": "2 tbsp" }
+    ],
+    "steps": [
+      "Blanch spinach and puree",
+      "Cut paneer into cubes",
+      "Sauté onions with garlic and ginger",
+      "Add spinach puree and cook for 5 minutes",
+      "Add paneer and cream",
+      "Cook for 10 more minutes",
+      "Serve hot with butter"
+
+
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Idli with Chutney",
+    "cuisine": "South Indian",
+    "description": "Steamed rice and lentil cakes",
+    "isVegetarian": true,
+    "approxCalories": 200,
+    "protein": 6,
+    "cookTime": 20,
+    "ingredients": [
+      { "name": "Rice", "quantity": "1 cup" },
+      { "name": "Urad dal", "quantity": "0.5 cup" },
+      { "name": "Salt", "quantity": "1 tsp" },
+      { "name": "Coconut", "quantity": "0.5 cup" },
+      { "name": "Green chili", "quantity": "2" },
+      { "name": "Ginger", "quantity": "1 tbsp" },
+      { "name": "Coriander leaves", "quantity": "as needed" }
+    ],
+    "steps": [
+      "Soak rice and urad dal",
+      "Grind into smooth batter",
+      "Let ferment for 8 hours",
+      "Pour batter into idli molds",
+      "Steam for 8-10 minutes",
+      "Prepare coconut chutney",
+      "Serve hot with sambar and chutney"
+
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Biryani",
+    "cuisine": "North Indian",
+    "description": "Fragrant rice with meat",
+    "isVegetarian": false,
+    "approxCalories": 450,
+    "protein": 25,
+    "cookTime": 60,
+    "ingredients": [
+      { "name": "Basmati rice", "quantity": "2 cups" },
+      { "name": "Meat", "quantity": "500g" },
+      { "name": "Onion", "quantity": "3 large" },
+      { "name": "Yogurt", "quantity": "0.5 cup" },
+      { "name": "Ginger-garlic paste", "quantity": "2 tbsp" },
+      { "name": "Saffron", "quantity": "0.5 tsp" },
+      { "name": "Whole spices", "quantity": "as needed" }
+    ],
+    "steps": [
+      "Marinate meat in yogurt and spices",
+      "Fry onions until golden",
+      "Cook meat with fried onions",
+      "Cook basmati rice separately",
+      "Layer meat and rice",
+      "Cook on high heat for 2 minutes",
+      "Cook on low heat for 45 minutes covered"
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Veg Fried Rice",
+    "cuisine": "Chinese",
+    "description": "Stir-fried rice with mixed vegetables",
+    "isVegetarian": true,
+    "approxCalories": 320,
+    "protein": 8,
+    "cookTime": 20,
+    "ingredients": [
+      { "name": "Cooked rice", "quantity": "2 cups" },
+      { "name": "Mixed vegetables", "quantity": "1 cup" },
+      { "name": "Soy sauce", "quantity": "2 tbsp" },
+      { "name": "Spring onion", "quantity": "2" },
+      { "name": "Oil", "quantity": "1 tbsp" }
+    ],
+    "steps": [
+      "Heat oil in a wok",
+      "Stir-fry vegetables until tender",
+      "Add rice and soy sauce",
+      "Toss well and garnish with spring onion"
+
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Gobi Manchurian",
+    "cuisine": "Chinese",
+    "description": "Crispy cauliflower in tangy sauce",
+    "isVegetarian": true,
+    "approxCalories": 300,
+    "protein": 4,
+    "cookTime": 30,
+    "ingredients": [
+      { "name": "Cauliflower", "quantity": "250g" },
+      { "name": "Cornflour", "quantity": "1/2 cup" },
+      { "name": "maida", "quantity": "1 tbsp" },
+      { "name": "red chilli powder", "quantity": "1/2 tsp" },
+      { "name": "oil", "quantity": "as needed" },
+      { "name": "Salt", "quantity": "as needed" },
+      { "name": "Garlic (chopped)", "quantity": "50g" },
+      { "name": "onion", "quantity": "1/2 cup" },
+      { "name": "Soy sauce", "quantity": "1 tbsp" },
+      { "name": "tomato ketchup", "quantity": "1 tbsp" },
+      { "name": "Garlic ginger paste", "quantity": "1 tbsp" }
+    ],
+    "steps": [
+     "Cut the cauliflower into small pieces",
+     "Boil the cauliflower in salt water and drain it",
+     "Make a thick batter using flour and corn flour",
+     "Coat the cauliflower with the batter",
+     "Deep fry the cauliflower until it becomes golden",
+     "Heat oil in a pan",
+     "Fry the chopped garlic in the oil",
+     "Add onion and capsicum and cook well",
+     "Add soy sauce and ketchup to make the sauce",
+     "Mix the fried cauliflower with the sauce and serve"
+
+
+
+
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Hakka Noodles",
+    "cuisine": "Chinese",
+    "description": "Stir-fried noodles with vegetables",
+    "isVegetarian": true,
+    "approxCalories": 360,
+    "protein": 9,
+    "cookTime": 25,
+    "ingredients": [
+        { "name": "Hakka noodles", "quantity": "200 g" },
+    { "name": "Oil", "quantity": "2 tbsp" },
+    { "name": "Garlic", "quantity": "1 tbsp (chopped)" },
+    { "name": "Onion", "quantity": "1/2 cup (sliced)" },
+    { "name": "Capsicum", "quantity": "1/2 cup (sliced)" },
+    { "name": "Carrot", "quantity": "1/2 cup (julienned)" },
+    { "name": "Cabbage", "quantity": "1 cup (shredded)" },
+    { "name": "Soy sauce", "quantity": "2 tbsp" },
+    { "name": "Vinegar", "quantity": "1 tsp" },
+    { "name": "Black pepper", "quantity": "1/2 tsp" },
+    { "name": "Salt", "quantity": "to taste" }
+    ],
+    "steps": [
+      "Boil noodles in water and drain well",
+    "Heat oil in a pan on high flame",
+    "Add chopped garlic and sauté briefly",
+    "Add onion and stir fry until soft",
+    "Add carrot, capsicum, and cabbage",
+    "Stir fry vegetables on high heat",
+    "Add boiled noodles to the pan",
+    "Add soy sauce and vinegar",
+    "Add salt and black pepper",
+    "Toss everything well and serve hot"
+
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Spring Rolls",
+    "cuisine": "Chinese",
+    "description": "Crispy rolls stuffed with veggies",
+    "isVegetarian": true,
+    "approxCalories": 320,
+    "protein": 7,
+    "cookTime": 35,
+    "ingredients": [
+       { "name": "Spring roll sheets", "quantity": "10 sheets" },
+    { "name": "Cabbage", "quantity": "1 cup (shredded)" },
+    { "name": "Carrot", "quantity": "1/2 cup (julienned)" },
+    { "name": "Capsicum", "quantity": "1/2 cup (sliced)" },
+    { "name": "Garlic", "quantity": "1 tbsp (chopped)" },
+    { "name": "Oil", "quantity": "2 tbsp" },
+    { "name": "Soy sauce", "quantity": "1 tbsp" },
+    { "name": "Black pepper", "quantity": "1/2 tsp" },
+    { "name": "Salt", "quantity": "to taste" },
+    { "name": "Oil", "quantity": "for deep frying" }
+    ],
+    "steps": [
+      "Heat oil in a pan",
+    "Add chopped garlic and sauté",
+    "Add cabbage, carrot, and capsicum",
+    "Stir fry vegetables on high heat",
+    "Add soy sauce, pepper, and salt",
+    "Mix well and allow filling to cool",
+    "Place filling on spring roll sheet",
+    "Roll tightly and seal the edges",
+    "Deep fry spring rolls until golden",
+    "Serve hot with sauce"
+
+
+
+
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Chilli Paneer",
+    "cuisine": "Chinese",
+    "description": "Paneer tossed in spicy sauce",
+    "isVegetarian": true,
+    "approxCalories": 420,
+    "protein": 18,
+    "cookTime": 30,
+    "ingredients": [
+     { "name": "Paneer", "quantity": "200 g (cubed)" },
+    { "name": "Corn flour", "quantity": "2 tbsp" },
+    { "name": "Maida", "quantity": "2 tbsp" },
+    { "name": "Capsicum", "quantity": "1 cup (cubed)" },
+    { "name": "Onion", "quantity": "1 cup (cubed)" },
+    { "name": "Garlic", "quantity": "1 tbsp (chopped)" },
+    { "name": "Green chilli", "quantity": "1 tsp (chopped)" },
+    { "name": "Soy sauce", "quantity": "1 tbsp" },
+    { "name": "Chilli sauce", "quantity": "1 tbsp" },
+    { "name": "Oil", "quantity": "for frying and cooking" }
+    ],
+    "steps": [
+        "Cut paneer into medium-sized cubes",
+    "Coat paneer with maida and corn flour",
+    "Deep fry paneer cubes until golden",
+    "Heat oil in a pan",
+    "Add chopped garlic and green chilli",
+    "Add onion and capsicum and stir fry",
+    "Add soy sauce and chilli sauce",
+    "Mix well to prepare the sauce",
+    "Add fried paneer to the sauce",
+    "Toss well and serve hot"
+
+
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Schezwan Rice",
+    "cuisine": "Chinese",
+    "description": "Spicy tossed rice with schezwan sauce",
+    "isVegetarian": false,
+    "approxCalories": 480,
+    "protein": 24,
+    "cookTime": 20,
+    "ingredients": [
+      { "name": "Cooked rice", "quantity": "2 cups" },
+    { "name": "Chicken", "quantity": "200 g (boneless, chopped)" },
+    { "name": "Oil", "quantity": "2 tbsp" },
+    { "name": "Garlic", "quantity": "1 tbsp (chopped)" },
+    { "name": "Onion", "quantity": "1/2 cup (chopped)" },
+    { "name": "Carrot", "quantity": "1/2 cup (chopped)" },
+    { "name": "Capsicum", "quantity": "1/2 cup (chopped)" },
+    { "name": "Schezwan sauce", "quantity": "2 tbsp" },
+    { "name": "Soy sauce", "quantity": "1 tbsp" },
+    { "name": "Salt", "quantity": "to taste" }
+    ],
+    "steps": [
+     "Heat oil in a pan on high flame",
+    "Add chopped garlic and sauté",
+    "Add chicken pieces and cook well",
+    "Add onion and stir fry lightly",
+    "Add carrot and capsicum",
+    "Stir fry vegetables on high heat",
+    "Add schezwan sauce and soy sauce",
+    "Mix well to coat chicken and vegetables",
+    "Add cooked rice and salt",
+    "Toss well and serve hot"
+
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Margherita Pizza",
+    "cuisine": "Italian",
+    "description": "Classic cheese and tomato pizza",
+    "isVegetarian": true,
+    "approxCalories": 300,
+    "protein": 12,
+    "cookTime": 20,
+    "ingredients": [
+       { "name": "Pizza base", "quantity": "1 medium" },
+    { "name": "Pizza sauce", "quantity": "3 tbsp" },
+    { "name": "Mozzarella cheese", "quantity": "1 cup (grated)" },
+    { "name": "Tomato", "quantity": "1 small (sliced)" },
+    { "name": "Olive oil", "quantity": "1 tbsp" },
+    { "name": "Oregano", "quantity": "1 tsp" },
+    { "name": "Chilli flakes", "quantity": "1/2 tsp" },
+    { "name": "Salt", "quantity": "a pinch" }
+    ],
+    "steps": [
+      "Preheat the oven to 200 degree Celsius",
+    "Place the pizza base on a tray",
+    "Spread pizza sauce evenly on the base",
+    "Add tomato slices on top",
+    "Sprinkle grated mozzarella cheese",
+    "Drizzle olive oil lightly",
+    "Sprinkle oregano and chilli flakes",
+    "Bake the pizza for 10 to 12 minutes",
+    "Check when cheese melts and turns golden",
+    "Remove from oven, slice, and serve hot"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Pasta Alfredo",
+    "cuisine": "Italian",
+    "description": "Creamy fettuccine pasta",
+    "isVegetarian": true,
+    "approxCalories": 420,
+    "protein": 14,
+    "cookTime": 25,
+    "ingredients": [
+      { "name": "Pasta", "quantity": "200 g" },
+    { "name": "Butter", "quantity": "2 tbsp" },
+    { "name": "Garlic", "quantity": "1 tbsp (chopped)" },
+    { "name": "Fresh cream", "quantity": "1 cup" },
+    { "name": "Milk", "quantity": "1/2 cup" },
+    { "name": "Cheese", "quantity": "1/2 cup (grated)" },
+    { "name": "Black pepper", "quantity": "1/2 tsp" },
+    { "name": "Salt", "quantity": "to taste" },
+    { "name": "Oregano", "quantity": "1/2 tsp" }
+    ],
+    "steps": [
+      "Boil pasta in salted water and drain",
+    "Heat butter in a pan",
+    "Add chopped garlic and sauté lightly",
+    "Add fresh cream and milk",
+    "Cook the sauce on low flame",
+    "Add salt and black pepper",
+    "Add grated cheese and mix well",
+    "Cook until the sauce becomes creamy",
+    "Add boiled pasta to the sauce",
+    "Mix well and serve hot"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Penne Arrabiata",
+    "cuisine": "Italian",
+    "description": "Spicy tomato penne",
+    "isVegetarian": true,
+    "approxCalories": 380,
+    "protein": 10,
+    "cookTime": 20,
+    "ingredients": [
+      { "name": "Penne", "quantity": "200g" },
+      { "name": "Tomato", "quantity": "2 cups" },
+      { "name": "Chili flakes", "quantity": "1 tsp" },
+      { "name": "Garlic", "quantity": "2 cloves" }
+    ],
+    "steps": [
+      "Cook penne",
+      "Make spicy tomato sauce",
+      "Combine and garnish with parsley"
+
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Lasagna",
+    "cuisine": "Italian",
+    "description": "Layered pasta bake with cheese",
+    "isVegetarian": false,
+    "approxCalories": 500,
+    "protein": 32,
+    "cookTime": 60,
+    "ingredients": [
+    { "name": "Chicken", "quantity": "250 g (minced or finely chopped)" },
+    { "name": "Olive oil", "quantity": "2 tbsp" },
+    { "name": "Garlic", "quantity": "1 tbsp (chopped)" },
+    { "name": "Onion", "quantity": "1 cup (chopped)" },
+    { "name": "Tomato sauce", "quantity": "1.5 cups" },
+    { "name": "White sauce", "quantity": "1 cup" },
+    { "name": "Cheese", "quantity": "1.5 cups (grated)" },
+    { "name": "Salt", "quantity": "to taste" },
+    { "name": "Black pepper", "quantity": "1/2 tsp" }
+
+    ],
+    "steps": [
+      "Boil lasagna sheets in salted water and drain",
+    "Heat oil in a pan",
+    "Add chopped garlic and sauté",
+    "Add onion and cook until soft",
+    "Add chicken and cook until done",
+    "Add tomato sauce and mix well",
+    "Preheat the oven to 180 degree Celsius",
+    "Layer lasagna sheets, chicken sauce, and white sauce",
+    "Top with grated cheese",
+    "Bake for 30 to 35 minutes and serve hot"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Bruschetta",
+    "cuisine": "Italian",
+    "description": "Toasted bread with tomato topping",
+    "isVegetarian": true,
+    "approxCalories": 180,
+    "protein": 4,
+    "cookTime": 10,
+    "ingredients": [
+      { "name": "Baguette slices", "quantity": "6" },
+      { "name": "Tomato", "quantity": "1 cup" },
+      { "name": "Basil", "quantity": "as needed" },
+      { "name": "Olive oil", "quantity": "1 tbsp" }
+    ],
+    "steps": [
+      "Toast bread",
+      "Top with tomato mixture",
+      "Drizzle olive oil and serve"
+
+
+
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Risotto",
+    "cuisine": "Italian",
+    "description": "Creamy arborio rice with parmesan",
+    "isVegetarian": true,
+    "approxCalories": 350,
+    "protein": 8,
+    "cookTime": 35,
+    "ingredients": [
+      { "name": "Arborio rice", "quantity": "1 cup" },
+      { "name": "Vegetable stock", "quantity": "3 cups" },
+      { "name": "Parmesan", "quantity": "50g" },
+      { "name": "Butter", "quantity": "1 tbsp" }
+    ],
+    "steps": [
+      "Sauté rice in butter",
+      "Gradually add stock and stir",
+      "Finish with parmesan and serve"
+
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Croissant",
+    "cuisine": "French",
+    "description": "Buttery flaky pastry",
+    "isVegetarian": true,
+    "approxCalories": 250,
+    "protein": 5,
+    "cookTime": 120,
+    "ingredients": [
+      { "name": "All-purpose flour", "quantity": "2 cups" },
+    { "name": "Butter", "quantity": "1 cup (cold)" },
+    { "name": "Milk", "quantity": "1/2 cup" },
+    { "name": "Sugar", "quantity": "2 tbsp" },
+    { "name": "Yeast", "quantity": "1 tsp" },
+    { "name": "Salt", "quantity": "1 tsp" },
+    { "name": "Water", "quantity": "as needed" },
+    { "name": "Egg", "quantity": "1 (for egg wash)" }
+    ],
+    "steps": [
+      "Mix flour, sugar, salt, and yeast",
+    "Add milk and water to form dough",
+    "Knead the dough until smooth",
+    "Roll dough and add cold butter layer",
+    "Fold and roll the dough several times",
+    "Rest the dough in refrigerator",
+    "Cut dough into triangle shapes",
+    "Roll triangles to form croissants",
+    "Brush with egg wash",
+    "Bake until golden brown"
+
+
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Ratatouille",
+    "cuisine": "French",
+    "description": "Baked layered vegetables",
+    "isVegetarian": true,
+    "approxCalories": 180,
+    "protein": 3,
+    "cookTime": 45,
+    "ingredients": [
+     { "name": "Brinjal", "quantity": "1 medium (sliced)" },
+    { "name": "Zucchini", "quantity": "1 medium (sliced)" },
+    { "name": "Tomato", "quantity": "2 medium (sliced)" },
+    { "name": "Onion", "quantity": "1 medium (sliced)" },
+    { "name": "Bell pepper", "quantity": "1 medium (sliced)" },
+    { "name": "Garlic", "quantity": "1 tbsp (chopped)" },
+    { "name": "Olive oil", "quantity": "2 tbsp" },
+    { "name": "Tomato sauce", "quantity": "1/2 cup" },
+    { "name": "Salt", "quantity": "to taste" },
+    { "name": "Black pepper", "quantity": "1/2 tsp" }
+
+    ],
+    "steps": [
+      "Preheat the oven to 180 degree Celsius",
+    "Spread tomato sauce in a baking dish",
+    "Arrange sliced vegetables over the sauce",
+    "Sprinkle chopped garlic on top",
+    "Drizzle olive oil evenly",
+    "Add salt and black pepper",
+    "Cover the dish with foil",
+    "Bake for 35 to 40 minutes",
+    "Remove foil and bake for few minutes",
+    "Serve hot as a side dish"
+
+
+
+
+    ]
+  },
+  {
+    "id": 23,
+    "title": "French Onion Soup",
+    "cuisine": "French",
+    "description": "Caramelized onion soup with cheese",
+    "isVegetarian": true,
+    "approxCalories": 220,
+    "protein": 6,
+    "cookTime": 60,
+    "ingredients": [
+      { "name": "Onions", "quantity": "4 large" },
+      { "name": "Beef stock", "quantity": "4 cups" },
+      { "name": "Bread", "quantity": "slices" },
+      { "name": "Gruyere", "quantity": "100g" }
+    ],
+    "steps": [
+      "Caramelize onions slowly",
+      "Add stock and simmer",
+      "Top with bread and cheese, broil until melted"
+
+
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Quiche Lorraine",
+    "cuisine": "French",
+    "description": "Savory tart with bacon and custard",
+    "isVegetarian": false,
+    "approxCalories": 420,
+    "protein": 14,
+    "cookTime": 50,
+    "ingredients": [
+      { "name": "Pie crust", "quantity": "1" },
+      { "name": "Bacon", "quantity": "150g" },
+      { "name": "Eggs", "quantity": "3" },
+      { "name": "Cream", "quantity": "1 cup" }
+    ],
+    "steps": [
+      "Blind bake crust",
+      "Cook bacon and spread in crust",
+      "Pour egg-cream mixture and bake until set"
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Crêpes",
+    "cuisine": "French",
+    "description": "Thin pancakes, sweet or savory",
+    "isVegetarian": true,
+    "approxCalories": 150,
+    "protein": 4,
+    "cookTime": 20,
+    "ingredients": [
+      { "name": "Flour", "quantity": "1 cup" },
+      { "name": "Milk", "quantity": "1 cup" },
+      { "name": "Eggs", "quantity": "2" },
+      { "name": "Butter", "quantity": "1 tbsp" }
+    ],
+    "steps": [
+      "Mix batter until smooth",
+      "Cook thin crepes on a hot pan",
+      "Fill with desired filling and serve"
+
+
+
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Nicoise Salad",
+    "cuisine": "French",
+    "description": "Salad with tuna, eggs, and vegetables",
+    "isVegetarian": false,
+    "approxCalories": 320,
+    "protein": 20,
+    "cookTime": 20,
+    "ingredients": [
+      { "name": "Tuna", "quantity": "150g" },
+      { "name": "Eggs", "quantity": "2" },
+      { "name": "Olives", "quantity": "as needed" },
+      { "name": "Green beans", "quantity": "1 cup" }
+    ],
+    "steps": [
+      "Boil eggs and blanch beans",
+      "Assemble salad with tuna and vegetables",
+      "Dress and serve chilled"
+
+
+
+
+
+
+
+
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Sushi",
+    "cuisine": "Japanese",
+    "description": "Rice rolls with fish or vegetables",
+    "isVegetarian": false,
+    "approxCalories": 340,
+    "protein": 18,
+    "cookTime": 40,
+    "ingredients": [
+       { "name": "Sushi rice", "quantity": "1.5 cups (cooked)" },
+    { "name": "Fish", "quantity": "150 g (fresh, thinly sliced)" },
+    { "name": "Nori sheets", "quantity": "4 sheets" },
+    { "name": "Cucumber", "quantity": "1/2 cup (thin strips)" },
+    { "name": "Avocado", "quantity": "1/2 cup (sliced)" },
+    { "name": "Rice vinegar", "quantity": "1 tbsp" },
+    { "name": "Sugar", "quantity": "1 tsp" },
+    { "name": "Salt", "quantity": "a pinch" },
+    { "name": "Soy sauce", "quantity": "for serving" }
+    ],
+    "steps": [
+      "Cook sushi rice and allow it to cool",
+    "Mix rice vinegar, sugar, and salt with the rice",
+    "Place a nori sheet on a rolling mat",
+    "Spread rice evenly on the nori sheet",
+    "Place fish and vegetables in the center",
+    "Roll tightly using the mat",
+    "Seal the edge with water",
+    "Cut the roll into equal pieces",
+    "Arrange sushi pieces on a plate",
+    "Serve with soy sauce"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Ramen",
+    "cuisine": "Japanese",
+    "description": "Noodle soup with flavorful broth",
+    "isVegetarian": false,
+    "approxCalories": 480,
+    "protein": 32,
+    "cookTime": 60,
+    "ingredients": [
+      { "name": "Ramen noodles", "quantity": "200 g" },
+    { "name": "Chicken", "quantity": "150 g (boneless, sliced)" },
+    { "name": "Egg", "quantity": "2 (boiled)" },
+    { "name": "Oil", "quantity": "1 tbsp" },
+    { "name": "Garlic", "quantity": "1 tbsp (chopped)" },
+    { "name": "Ginger", "quantity": "1 tsp (chopped)" },
+    { "name": "Soy sauce", "quantity": "1.5 tbsp" },
+    { "name": "Chicken stock", "quantity": "3 cups" },
+    { "name": "Spring onion", "quantity": "2 tbsp (chopped)" },
+    { "name": "Salt", "quantity": "to taste" }
+    ],
+    "steps": [
+      "Boil ramen noodles and keep aside",
+    "Heat oil in a pot",
+    "Add garlic and ginger and sauté",
+    "Add chicken and cook until tender",
+    "Add chicken stock and bring to boil",
+    "Add soy sauce and salt",
+    "Simmer the broth for few minutes",
+    "Add boiled noodles to the broth",
+    "Add boiled egg halves on top",
+    "Garnish with spring onion and serve hot"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Tempura",
+    "cuisine": "Japanese",
+    "description": "Lightly battered fried seafood and vegetables",
+    "isVegetarian": false,
+    "approxCalories": 360,
+    "protein": 10,
+    "cookTime": 30,
+    "ingredients": [
+      { "name": "Assorted vegetables/seafood", "quantity": "300g" },
+      { "name": "Tempura batter", "quantity": "1 cup" },
+      { "name": "Oil", "quantity": "for frying" }
+    ],
+    "steps": [
+      "Coat items in batter",
+      "Fry until crisp",
+      "Serve with dipping sauce"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Udon Noodles",
+    "cuisine": "Japanese",
+    "description": "Thick wheat noodles in broth",
+    "isVegetarian": true,
+    "approxCalories": 330,
+    "protein": 9,
+    "cookTime": 25,
+    "ingredients": [
+      { "name": "Udon noodles", "quantity": "200g" },
+      { "name": "Broth", "quantity": "3 cups" },
+      { "name": "Scallions", "quantity": "2" }
+    ],
+    "steps": [
+      "Cook noodles",
+      "Prepare light broth",
+      "Combine and garnish with scallions"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Onigiri",
+    "cuisine": "Japanese",
+    "description": "Rice balls with savory filling",
+    "isVegetarian": false,
+    "approxCalories": 180,
+    "protein": 4,
+    "cookTime": 15,
+    "ingredients": [
+      { "name": "Cooked rice", "quantity": "2 cups" },
+      { "name": "Filling (tuna/pickles)", "quantity": "as needed" },
+      { "name": "Nori", "quantity": "strips" }
+    ],
+    "steps": [
+      "Shape rice around filling",
+      "Wrap with nori",
+      "Serve as snack or lunch"
+
+
+
+
+
+
+      
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Gulab Jamun",
+    "cuisine": "Dessert",
+    "description": "Fried dough balls soaked in syrup",
+    "isVegetarian": true,
+    "approxCalories": 180,
+    "protein": 3,
+    "cookTime": 40,
+    "ingredients": [
+      { "name": "Milk powder", "quantity": "1 cup" },
+    { "name": "Maida", "quantity": "1/4 cup" },
+    { "name": "Baking soda", "quantity": "a pinch" },
+    { "name": "Ghee", "quantity": "1 tbsp" },
+    { "name": "Milk", "quantity": "as needed" },
+    { "name": "Sugar", "quantity": "1.5 cups" },
+    { "name": "Water", "quantity": "1.5 cups" },
+    { "name": "Cardamom powder", "quantity": "1/2 tsp" },
+    { "name": "Oil", "quantity": "for deep frying" }
+    ],
+    "steps": [
+     "Mix milk powder, maida, and baking soda",
+    "Add ghee and milk to form soft dough",
+    "Make small smooth balls from the dough",
+    "Heat oil on low flame",
+    "Fry the balls until golden brown",
+    "Heat sugar and water to make sugar syrup",
+    "Add cardamom powder to the syrup",
+    "Soak fried balls in warm syrup",
+    "Rest the gulab jamuns for some time",
+    "Serve warm or cold"
+
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Chocolate Brownie",
+    "cuisine": "Dessert",
+    "description": "Rich fudgy chocolate squares",
+    "isVegetarian": false,
+    "approxCalories": 280,
+    "protein": 4,
+    "cookTime": 30,
+    "ingredients": [
+      { "name": "All-purpose flour", "quantity": "1/2 cup" },
+    { "name": "Cocoa powder", "quantity": "1/4 cup" },
+    { "name": "Butter", "quantity": "1/2 cup" },
+    { "name": "Sugar", "quantity": "3/4 cup" },
+    { "name": "Eggs", "quantity": "2" },
+    { "name": "Baking powder", "quantity": "1/2 tsp" },
+    { "name": "Vanilla essence", "quantity": "1 tsp" },
+    { "name": "Salt", "quantity": "a pinch" }
+    ],
+    "steps": [
+      "Preheat the oven to 180 degree Celsius",
+    "Melt butter and allow it to cool",
+    "Mix sugar and eggs well",
+    "Add melted butter and vanilla essence",
+    "Add cocoa powder and mix",
+    "Add flour, baking powder, and salt",
+    "Mix gently to form batter",
+    "Pour batter into greased tray",
+    "Bake for 20 to 25 minutes",
+    "Cool, cut into pieces, and serve"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Vanilla IceCream",
+    "cuisine": "Dessert",
+    "description": "Classic vanilla ice cream",
+    "isVegetarian": true,
+    "approxCalories": 210,
+    "protein": 3,
+    "cookTime": 240,
+    "ingredients": [
+      { "name": "Fresh cream", "quantity": "2 cups" },
+    { "name": "Milk", "quantity": "1 cup" },
+    { "name": "Sugar", "quantity": "3/4 cup" },
+    { "name": "Vanilla essence", "quantity": "1 tbsp" },
+    { "name": "Corn flour", "quantity": "1 tsp" }
+
+    ],
+    "steps": [
+      "Heat milk in a pan",
+    "Mix corn flour with little milk",
+    "Add corn flour mix to hot milk and stir",
+    "Cook until milk slightly thickens",
+    "Allow the milk mixture to cool",
+    "Add fresh cream and sugar",
+    "Add vanilla essence and mix well",
+    "Pour mixture into a container",
+    "Freeze for 6 to 8 hours",
+    "Scoop and serve chilled" ]
+  },
+  {
+    "id": 35,
+    "title": "Cheesecake",
+    "cuisine": "Dessert",
+    "description": "Creamy baked cheesecake",
+    "isVegetarian": false,
+    "approxCalories": 350,
+    "protein": 6,
+    "cookTime": 90,
+    "ingredients": [
+      { "name": "Cream cheese", "quantity": "200 g" },
+    { "name": "Digestive biscuits", "quantity": "1 cup (crushed)" },
+    { "name": "Butter", "quantity": "1/4 cup (melted)" },
+    { "name": "Sugar", "quantity": "1/2 cup" },
+    { "name": "Fresh cream", "quantity": "1/2 cup" },
+    { "name": "Eggs", "quantity": "2" },
+    { "name": "Vanilla essence", "quantity": "1 tsp" }
+    ],
+    "steps": [
+      "Crush biscuits into fine crumbs",
+    "Mix biscuit crumbs with melted butter",
+    "Press the mixture into a baking tin",
+    "Beat cream cheese until smooth",
+    "Add sugar and mix well",
+    "Add eggs and vanilla essence",
+    "Add fresh cream and mix gently",
+    "Pour mixture over biscuit base",
+    "Bake at 170 degree Celsius for 40 minutes",
+    "Cool, chill, and serve"
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Fruit Custard",
+    "cuisine": "Dessert",
+    "description": "Mixed fruit in creamy custard",
+    "isVegetarian": true,
+    "approxCalories": 180,
+    "protein": 4,
+    "cookTime": 15,
+    "ingredients": [
+      { "name": "Milk", "quantity": "2 cups" },
+    { "name": "Custard powder", "quantity": "2 tbsp" },
+    { "name": "Sugar", "quantity": "3 tbsp" },
+    { "name": "Apple", "quantity": "1/2 cup (chopped)" },
+    { "name": "Banana", "quantity": "1/2 cup (sliced)" },
+    { "name": "Grapes", "quantity": "1/2 cup (halved)" },
+    { "name": "Pomegranate", "quantity": "1/4 cup" }
+    ],
+    "steps": [
+      "Heat milk in a pan",
+    "Mix custard powder with little cold milk",
+    "Add custard mixture to hot milk and stir",
+    "Cook until the custard thickens",
+    "Add sugar and mix well",
+    "Allow custard to cool completely",
+    "Add chopped fruits to the custard",
+    "Mix gently",
+    "Refrigerate for some time",
+    "Serve chilled"]
+    }, 
+    { 
+     "id": 37,
+     "title": "Bread Halwa",
+     "cuisine": "Dessert",
+     "description": "Sweet halwa made using bread, milk, and ghee",
+     "isVegetarian": true,
+     "approxCalories": 280,
+     "protein": 6,
+    "cookTime": 25,
+     "ingredients": [
+    { "name": "Bread slices", "quantity": "6 (crumbled)" },
+    { "name": "Milk", "quantity": "1.5 cups" },
+    { "name": "Sugar", "quantity": "1/2 cup" },
+    { "name": "Ghee", "quantity": "3 tbsp" },
+    { "name": "Cashews", "quantity": "2 tbsp (chopped)" },
+    { "name": "Raisins", "quantity": "1 tbsp" },
+    { "name": "Cardamom powder", "quantity": "1/2 tsp" }
+  ],
+   "steps": [
+    "Heat ghee in a pan",
+    "Fry cashews and raisins and keep aside",
+    "Add crumbled bread to the pan",
+    "Roast bread until golden",
+    "Add milk and mix well",
+    "Cook until bread softens",
+    "Add sugar and mix continuously",
+    "Cook until halwa thickens",
+    "Add cardamom powder and fried nuts",
+    "Mix well and serve hot"
+  ]
+  },
+  {
+    "id": 38,
+    "title": "Donuts",
+    "cuisine": "Dessert",
+    "description": "Fried sweet rings coated in sugar",
+    "isVegetarian": false,
+    "approxCalories": 260,
+    "protein": 4,
+    "cookTime": 30,
+    "ingredients": [
+      { "name": "All-purpose flour", "quantity": "2 cups" },
+    { "name": "Sugar", "quantity": "1/4 cup" },
+    { "name": "Milk", "quantity": "1/2 cup" },
+    { "name": "Butter", "quantity": "2 tbsp (melted)" },
+    { "name": "Yeast", "quantity": "1 tsp" },
+    { "name": "Egg", "quantity": "1" },
+    { "name": "Salt", "quantity": "a pinch" },
+    { "name": "Oil", "quantity": "for deep frying" } 
+  ],
+    "steps": [
+      "Mix flour, sugar, salt, and yeast",
+    "Add milk, egg, and melted butter",
+    "Knead to form a soft dough",
+    "Cover and rest the dough for 1 hour",
+    "Roll the dough and cut donut shapes",
+    "Heat oil in a pan",
+    "Fry donuts on low to medium flame",
+    "Turn and fry until golden brown",
+    "Remove and drain excess oil",
+    "Cool slightly and serve"
+    ]
+  }
+]

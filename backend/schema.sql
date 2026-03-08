@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS saved_plans (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  plan_date TEXT UNIQUE NOT NULL,
+  meal_data TEXT NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_plan_date ON saved_plans(plan_date);

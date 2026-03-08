@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Generator</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="app-container">
+    <!-- Navigation Header -->
+    <header id="main-header" class="header">
+      <div class="container">
+        <div class="header-content">
+          <h1 class="logo">🍳 Intellicook</h1>
+          <nav class="nav-menu">
+            <button class="nav-btn" data-page="cookbook">Cook Book</button>
+            <button class="nav-btn" data-page="generator">Generate Recipe</button>
+            <button class="nav-btn" data-page="planner">Meal Planner</button>
+            <div class="veg-toggle">
+              <label for="veg-only">
+                <input type="checkbox" id="veg-only">
+                <span>Veg Only</span>
+              </label>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+
+      <!-- Cook Book Page -->
+      <div id="cookbook-page" class="page">
+        <div class="container">
+          <h2>Cook Book</h2>
+          
+          <!-- Search & Filter Section -->
+          <div class="filter-section">
+            <div class="search-box">
+              <input type="text" id="recipe-search" placeholder="Search recipes...">
+            </div>
+            <div class="filter-group">
+              <select id="cuisine-filter">
+                <option value="">All Cuisines</option>
+                <option value="North Indian">North Indian</option>
+                <option value="South Indian">South Indian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Italian">Italian</option>
+                <option value="French">French</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Dessert">Dessert</option>
+              </select>
+              <select id="diet-filter">
+                <option value="">All Diets</option>
+                <option value="veg">Vegetarian</option>
+                <option value="non-veg">Non-Vegetarian</option>
+              </select>
+
+              <!-- Sliders are grouped so Calories and Protein align inside same filter column -->
+              <div class="slider-wrap">
+                <div class="slider-item">
+                  <input type="range" id="calories-filter" min="0" max="500" value="500" class="range-slider calories">
+                  <span id="calories-label">Calories: 0–500</span>
+                </div>
+
+                <div class="slider-item">
+                  <input type="range" id="protein-filter" min="0" max="200" value="200" class="range-slider protein">
+                  <span id="protein-label">Protein: 0–200 g</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loading & Error States -->
+          <div id="cookbook-loading" class="loading" style="display: none;">Loading recipes...</div>
+          <div id="cookbook-error" class="error-message"></div>
+
+          <!-- Recipes Grid -->
+          <div id="recipes-grid" class="recipes-grid"></div>
+        </div>
+      </div>
+
+      <!-- Recipe Generator Page -->
+      <div id="generator-page" class="page">
+        <div class="container">
+          <h2>Generate Recipe</h2>
+          
+          <div class="generator-form-container">
+            <form id="generator-form">
+              <div class="form-group">
+                <label for="gen-cuisine">Cuisine</label>
+                <select id="gen-cuisine" required>
+                  <option value="">Select Cuisine</option>
+                  <option value="North Indian">North Indian</option>
+                  <option value="South Indian">South Indian</option>
+                  <option value="Chinese">Chinese</option>
+                  <option value="Italian">Italian</option>
+                  <option value="French">French</option>
+                  <option value="Japanese">Japanese</option>
+                  <option value="Dessert">Dessert</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="gen-ingredients">Ingredients / Recipe name</label>
+                <input type="text" id="gen-ingredients" placeholder="e.g., tomato, onion, garlic (comma-separated)">
+              </div>
+
+              <button type="submit" class="btn btn-primary">Generate Recipe</button>
+              <div id="generator-error" class="error-message"></div>
+            </form>
+
+            <!-- Loading State -->
+            <div id="generator-loading" class="loading" style="display: none;">
+              Generating recipe...
+            </div>
+
+            <!-- Generated Recipe Display -->
+            <div id="generated-recipe" class="recipe-card" style="display: none;">
+              <div class="recipe-header">
+                <h3 id="gen-recipe-title"></h3>
+                <span id="gen-recipe-veg" class="veg-badge"></span>
+              </div>
+              <div class="recipe-meta">
+                <span id="gen-recipe-region"></span>
+                <span id="gen-recipe-time"></span>
+                <span class="stat-badge stat-calories">🔥 <span id="gen-recipe-calories">0</span> cal</span>
+                <span class="stat-badge stat-protein">💪 <span id="gen-recipe-protein">0</span> g</span>
+              </div>
+              <div class="recipe-content">
+                <div class="recipe-section">
+                  <h4>Ingredients</h4>
+                  <ul id="gen-recipe-ingredients"></ul>
+                </div>
+                <div class="recipe-section">
+                  <h4>Steps</h4>
+                  <ol id="gen-recipe-steps"></ol>
+                </div>
+              </div>
+              <button class="btn btn-secondary" id="add-to-planner-gen">Add to Meal Planner</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meal Planner Page -->
+      <div id="planner-page" class="page">
+        <div class="container">
+          <h2>Meal Planner</h2>
+          
+          <div class="planner-container">
+            <!-- Date Selection -->
+            <div class="date-selector">
+              <input type="date" id="plan-date">
+              <button class="btn btn-secondary" id="load-plan-btn">Load Plan</button>
+              <button class="btn btn-secondary" id="save-plan-btn">Save Plan</button>
+            </div>
+
+            <!-- Calorie Tracker -->
+            <div class="calorie-tracker">
+              <h3>Calorie Tracker - <span id="plan-date-display">Today</span></h3>
+              <div class="calorie-summary">
+                <div class="calorie-item">
+                  <strong>Breakfast:</strong>
+                  <div>
+                    <span class="stat-badge stat-calories">🔥 <span id="breakfast-calories">0</span> cal</span>
+                    <span class="stat-badge stat-protein">💪 <span id="breakfast-protein">0</span> g</span>
+                  </div>
+                </div>
+                <div class="calorie-item">
+                  <strong>Lunch:</strong>
+                  <div>
+                    <span class="stat-badge stat-calories">🔥 <span id="lunch-calories">0</span> cal</span>
+                    <span class="stat-badge stat-protein">💪 <span id="lunch-protein">0</span> g</span>
+                  </div>
+                </div>
+                <div class="calorie-item">
+                  <strong>Dinner:</strong>
+                  <div>
+                    <span class="stat-badge stat-calories">🔥 <span id="dinner-calories">0</span> cal</span>
+                    <span class="stat-badge stat-protein">💪 <span id="dinner-protein">0</span> g</span>
+                  </div>
+                </div>
+                <div class="calorie-item">
+                  <strong>Snacks:</strong>
+                  <div>
+                    <span class="stat-badge stat-calories">🔥 <span id="snacks-calories">0</span> cal</span>
+                    <span class="stat-badge stat-protein">💪 <span id="snacks-protein">0</span> g</span>
+                  </div>
+                </div>
+                <div class="calorie-total">
+                  <strong>Totals:</strong>
+                  <div>
+                    <span class="stat-badge" style="background:rgba(255,255,255,0.15); color:white;">🔥 <span id="total-calories">0</span> cal</span>
+                    <span class="stat-badge" style="background:rgba(255,255,255,0.15); color:white;">💪 <span id="total-protein">0</span> g</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Meal Sections -->
+            <div class="meals-grid">
+              <!-- Breakfast -->
+              <div class="meal-section">
+                <h3>🌅 Breakfast</h3>
+                <div id="breakfast-items" class="meal-items"></div>
+                <button class="btn btn-secondary" data-meal="breakfast" data-action="add">+ Add Meal</button>
+              </div>
+
+              <!-- Lunch -->
+              <div class="meal-section">
+                <h3>🍽️ Lunch</h3>
+                <div id="lunch-items" class="meal-items"></div>
+                <button class="btn btn-secondary" data-meal="lunch" data-action="add">+ Add Meal</button>
+              </div>
+
+              <!-- Dinner -->
+              <div class="meal-section">
+                <h3>🌙 Dinner</h3>
+                <div id="dinner-items" class="meal-items"></div>
+                <button class="btn btn-secondary" data-meal="dinner" data-action="add">+ Add Meal</button>
+              </div>
+
+              <!-- Snacks -->
+              <div class="meal-section">
+                <h3>🍿 Snacks</h3>
+                <div id="snacks-items" class="meal-items"></div>
+                <button class="btn btn-secondary" data-meal="snacks" data-action="add">+ Add Meal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for selecting recipes to add -->
+      <div id="recipe-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 id="modal-title">Select Recipe</h3>
+            <button class="close-modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div id="modal-recipes-list" class="recipes-list"></div>
+            <!-- Pre-rendered meal selection (hidden by default). Buttons exist in DOM to avoid runtime creation. -->
+            <div id="meal-selection-content" class="meal-selection" style="display:none; grid-column: 1/-1; gap:0.5rem;">
+              <button class="btn btn-primary" data-meal-select="breakfast">🌅 Breakfast</button>
+              <button class="btn btn-primary" data-meal-select="lunch">🍽️ Lunch</button>
+              <button class="btn btn-primary" data-meal-select="dinner">🌙 Dinner</button>
+              <button class="btn btn-primary" data-meal-select="snacks">🍿 Snacks</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
