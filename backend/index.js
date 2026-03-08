@@ -38,55 +38,145 @@ function initializeDatabase() {
 app.post('/api/meal-plans/save', (req, res) => {
   const { planDate, mealData } = req.body;
 
-  console.log('Save meal plan request body:', JSON.stringify(req.body));
+  console.log('📝 Save meal plan request for date:', planDate);
+  console.log('Meal data:', JSON.stringify(mealData, null, 2));
 
+  // Validate inputs
   if (!planDate || !mealData) {
-    return res.status(400).json({ error: 'Missing required fields: planDate and mealData required', received: req.body });
+    console.error('❌ Validation failed - missing planDate or mealData');
+    return res.status(400).json({ 
+      error: 'Missing required fields: planDate and mealData required' 
+    });
   }
 
-  const payload = JSON.stringify(mealData);
+  try {
+    const payload = JSON.stringify(mealData);
+    console.log('💾 Payload size:', payload.length, 'bytes');
 
-  // Use a safe two-step insert-or-update to avoid relying on specific SQLite versions
-  db.get('SELECT id FROM saved_plans WHERE plan_date = ?', [planDate], (selectErr, row) => {
-    if (selectErr) {
-      console.error('DB select error when saving meal plan:', selectErr);
-      return res.status(500).json({ error: 'Failed to save meal plan', detail: selectErr.message });
-    }
+    // Check if plan already exists
+    db.get('SELECT id FROM saved_plans WHERE plan_date = ?', [planDate], (selectErr, row) => {
+      if (selectErr) {
+        console.error('❌ DB select error:', selectErr);
+        return res.status(500).json({ 
+          error: 'Database error - failed to check existing plan',
+          detail: selectErr.message 
+        });
+      }
 
-    if (row && row.id) {
-      db.run('UPDATE saved_plans SET meal_data = ? WHERE id = ?', [payload, row.id], function(updateErr) {
-        if (updateErr) {
-          console.error('DB update error when saving meal plan:', updateErr);
-          return res.status(500).json({ error: 'Failed to save meal plan', detail: updateErr.message });
-        }
-        return res.json({ success: true });
-      });
-    } else {
-      db.run('INSERT INTO saved_plans (plan_date, meal_data) VALUES (?, ?)', [planDate, payload], function(insertErr) {
-        if (insertErr) {
-          console.error('DB insert error when saving meal plan:', insertErr);
-          return res.status(500).json({ error: 'Failed to save meal plan', detail: insertErr.message });
-        }
-        return res.json({ success: true });
-      });
-    }
-  });
+      if (row && row.id) {
+        // Update existing plan
+        console.log(`🔄 Updating existing plan (ID: ${row.id})`);
+        db.run(
+          'UPDATE saved_plans SET meal_data = ?, created_at = CURRENT_TIMESTAMP WHERE id = ?', 
+          [payload, row.id], 
+          function(updateErr) {
+            if (updateErr) {
+              console.error('❌ DB update error:', updateErr);
+              return res.status(500).json({ 
+                error: 'Failed to update meal plan',
+                detail: updateErr.message 
+              });
+            }
+            console.log('✅ Meal plan updated successfully');
+            return res.json({ success: true, message: 'Meal plan updated' });
+          }
+        );
+      } else {
+        // Insert new plan
+        console.log('➕ Creating new meal plan');
+        db.run(
+          'INSERT INTO saved_plans (plan_date, meal_data) VALUES (?, ?)', 
+          [planDate, payload], 
+          function(insertErr) {
+            if (insertErr) {
+              console.error('❌ DB insert error:', insertErr);
+              return res.status(500).json({ 
+                error: 'Failed to save meal plan',
+                detail: insertErr.message 
+              });
+            }
+            console.log('✅ Meal plan saved successfully');
+            return res.json({ success: true, message: 'Meal plan saved' });
+          }
+        );
+      }
+    });
+  } catch (error) {
+    console.error('❌ Unexpected error:', error);
+    res.status(500).json({ 
+      error: 'Internal server error',
+      detail: error.message 
+    });
+  }
 });
 
 app.get('/api/meal-plans/:planDate', (req, res) => {
   const { planDate } = req.params;
+
+  console.log('📖 Load meal plan request for date:', planDate);
 
   db.get(
     'SELECT meal_data FROM saved_plans WHERE plan_date = ?',
     [planDate],
     (err, row) => {
       if (err) {
-        res.status(500).json({ error: 'Failed to retrieve meal plan' });
-      } else if (row) {
-        res.json(JSON.parse(row.meal_data));
-      } else {
-        res.json(null);
+        console.error('❌ DB error loading meal plan:', err);
+        return res.status(500).json({ error: 'Failed to retrieve meal plan' });
       }
+
+      if (row) {
+        try {
+          const mealData = JSON.parse(row.meal_data);
+          console.log('✅ Meal plan loaded successfully');
+          return res.json(mealData);
+        } catch (parseErr) {
+          console.error('❌ Error parsing meal data:', parseErr);
+          return res.status(500).json({ error: 'Corrupted meal plan data' });
+        }
+      } else {
+        console.log('ℹ️ No meal plan found for date:', planDate);
+        return res.json(null);
+      }
+    }
+  );
+});
+
+// ============ Get all saved plans (for history/list view) ============
+app.get('/api/meal-plans', (req, res) => {
+  console.log('📚 Fetching all saved meal plans');
+
+  db.all(
+    'SELECT id, plan_date, MAX(created_at) as created_at FROM saved_plans GROUP BY plan_date ORDER BY plan_date DESC',
+    [],
+    (err, rows) => {
+      if (err) {
+        console.error('❌ DB error fetching plans:', err);
+        return res.status(500).json({ error: 'Failed to retrieve meal plans' });
+      }
+
+      console.log(`✅ Found ${rows ? rows.length : 0} saved meal plans`);
+      return res.json(rows || []);
+    }
+  );
+});
+
+// ============ Delete a meal plan ============
+app.delete('/api/meal-plans/:planDate', (req, res) => {
+  const { planDate } = req.params;
+
+  console.log('🗑️ Delete meal plan request for date:', planDate);
+
+  db.run(
+    'DELETE FROM saved_plans WHERE plan_date = ?',
+    [planDate],
+    function(err) {
+      if (err) {
+        console.error('❌ DB error deleting plan:', err);
+        return res.status(500).json({ error: 'Failed to delete meal plan' });
+      }
+
+      console.log('✅ Meal plan deleted successfully');
+      return res.json({ success: true, message: 'Meal plan deleted' });
     }
   );
 });

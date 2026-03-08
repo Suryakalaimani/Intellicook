@@ -590,7 +590,9 @@ async function saveMealPlan() {
   const planDate = app.currentPlanDate;
 
   try {
-    // compute totals to include in payload (ensure backend can persist totals)
+    console.log('💾 Saving meal plan for date:', planDate);
+    
+    // Compute totals
     const mealTypes = ['breakfast', 'lunch', 'dinner', 'snacks'];
     let totalCalories = 0;
     let totalProtein = 0;
@@ -601,6 +603,8 @@ async function saveMealPlan() {
 
     const mealDataToSave = Object.assign({}, app.mealPlan, { totalCalories, totalProtein });
 
+    console.log('📤 Sending payload:', JSON.stringify(mealDataToSave, null, 2));
+
     const response = await fetch('/api/meal-plans/save', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -608,15 +612,22 @@ async function saveMealPlan() {
     });
 
     const json = await response.json().catch(() => null);
+    
+    console.log('📨 API Response:', response.status, json);
+
     if (response.ok) {
-      alert('Meal plan saved successfully!');
+      alert('✅ Meal plan saved successfully!');
+      console.log('Success:', json);
     } else if (json && json.error) {
-      alert('Failed to save meal plan: ' + json.error);
+      alert('❌ Failed to save meal plan: ' + json.error);
+      console.error('API Error:', json);
     } else {
-      alert('Failed to save meal plan');
+      alert('❌ Failed to save meal plan');
+      console.error('Unknown error, response:', response.statusText);
     }
   } catch (error) {
-    alert('Error saving meal plan: ' + (error && error.message ? error.message : 'network error'));
+    console.error('❌ Error saving meal plan:', error);
+    alert('❌ Error saving meal plan: ' + (error && error.message ? error.message : 'network error'));
   }
 }
 
@@ -624,21 +635,31 @@ async function loadMealPlan() {
   const planDate = app.currentPlanDate;
 
   try {
+    console.log('📖 Loading meal plan for date:', planDate);
+
     const response = await fetch(`/api/meal-plans/${planDate}`);
     const data = await response.json();
 
-    if (data) {
-      app.mealPlan = data;
+    console.log('📨 API Response:', data);
+
+    if (data && Object.keys(data).length > 0) {
+      // Restore meal plan, excluding computed totals
+      const { totalCalories, totalProtein, ...mealData } = data;
+      app.mealPlan = mealData;
+      
       ['breakfast', 'lunch', 'dinner', 'snacks'].forEach(mealType => {
         updateMealDisplay(mealType);
       });
       updateCalorieTracker();
-      alert('Meal plan loaded successfully!');
+      alert('✅ Meal plan loaded successfully!');
+      console.log('Loaded plan:', app.mealPlan);
     } else {
-      alert('No saved meal plan for this date');
+      alert('ℹ️ No saved meal plan for this date');
+      console.log('No data found for date:', planDate);
     }
   } catch (error) {
-    alert('Error loading meal plan: ' + error.message);
+    console.error('❌ Error loading meal plan:', error);
+    alert('❌ Error loading meal plan: ' + error.message);
   }
 }
 
