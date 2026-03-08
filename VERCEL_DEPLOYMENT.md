@@ -18,12 +18,20 @@
 In the Vercel project dashboard:
 
 1. Go to **Settings** → **Environment Variables**
-2. Add the following variables:
-   - **GEMINI_API_KEY**: Your Google Gemini API key
-   - **JWT_SECRET**: Your JWT secret string
-   - **PORT**: 3000
+2. Add the following variables by clicking "Add New":
+   - **Key**: `GEMINI_API_KEY`
+     **Value**: Your Google Gemini API key (from https://makersuite.google.com/app/apikey)
+     **Environments**: Production, Preview, Development
+   
+   - **Key**: `JWT_SECRET`
+     **Value**: Your JWT secret string (any secure random string)
+     **Environments**: Production, Preview, Development
+   
+   - **Key**: `PORT`
+     **Value**: `3000`
+     **Environments**: Production, Preview, Development
 
-3. Apply variables to all environments (Production, Preview, Development)
+3. Click "Save" for each variable
 
 ### 3. Configure Build Settings
 - **Framework Preset**: Other

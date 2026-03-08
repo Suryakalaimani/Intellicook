@@ -17,10 +17,5 @@
       "src": "/(.*)",
       "dest": "frontend/$1"
     }
-  ],
-  "env": {
-    "GEMINI_API_KEY": "@gemini_api_key",
-    "JWT_SECRET": "@jwt_secret",
-    "PORT": "3000"
-  }
+  ]
 }
